@@ -70,3 +70,6 @@ jobs:
         with: 
           bucket: gha-custom-action-course
           dist-folder: ./dist
+      - name: Output information
+        run: |
+          echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
